@@ -4,5 +4,14 @@ $(".nav-link").on("click", function(event){
     window.history.pushState(null, null, page)
     // window.history.pushState(null,null, window.location.pathname + page)
 
-    console.log(window.location)
+    $.ajax({
+        url:page,
+        success:function(data){
+            $("section").fadeOut(250, function(){
+                const nextPage = $(data).filter("section").html();
+                $("section").html(nextPage);
+                $("section").fadeIn(250);
+            })
+        }
+    })
 })

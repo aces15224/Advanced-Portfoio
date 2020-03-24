@@ -2,7 +2,6 @@ $(".nav-link").on("click", function(event){
     event.preventDefault();
     const page = $(this).attr("href")
     window.history.pushState(null, null, page)
-    // window.history.pushState(null,null, window.location.pathname + page)
 
     $.ajax({
         url:page,
@@ -15,3 +14,23 @@ $(".nav-link").on("click", function(event){
         }
     })
 })
+var clicked = false;
+$(".flip-card").on("click", function(){ 
+    var $this = $(this).parent()   
+    $(this).children(".flip-card-inner").toggleClass("flip-class")
+    
+    clicked = !clicked;
+    if (clicked) {
+        setTimeout(function(){ 
+            $this.addClass("back")}, 1000);
+        }
+    else{
+        $this.removeClass("back")
+    }
+})
+
+
+
+$('.popover-dismiss').popover({
+    trigger: 'hover'
+  })

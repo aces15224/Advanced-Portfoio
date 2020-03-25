@@ -1,7 +1,44 @@
 * {
     box-sizing: border-box;
   }
+
+/* body{
+  background-image: url("../images/mainBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+body, html { 
+  background: url("../images/mainBackground.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-2;
+}
+
+
+
+/* home page */
+
+img#profile-pic.img-responsive{
+  border-radius: 50%;
+  max-height: 300px;
+  z-index: 1;
+  position:relative;
+}
+div.card.home-card{
+  position:relative;
+  top: 50%;
+  background-color:rgb(88, 13, 207);
+  min-height: 200px;
+  color:white; 
+  text-align:center;
+  text-shadow: 1px 1px black;
   
+}
+
+div.card-body{
+}
   .back {
     /* padding: 50px; */
     transition: transform .2s;

@@ -25,7 +25,6 @@
             <li class="nav-item active">
               <!-- <a class="nav-link" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a> -->
               <a class="nav-link" href="./portfolio.html">Portfolio</a>
-
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact</a>
@@ -33,23 +32,135 @@
           </ul>
         </div>
       </nav>
+      <!-- Section -->
     <section>
       <div class="row">
-        <div class="col-3 pic-column" >
+          <div class="col-2">                 
+            <img src="./assets/images/d2.jpg" class="img-thumbnail dim-pic active" alt="Responsive image" 
+            data-target="#carouselExampleIndicators" data-slide-to="0">
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/d4.jpg" class="img-thumbnail dim-pic" alt="Responsive image"
+            data-target="#carouselExampleIndicators" data-slide-to="1">
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/d6.jpg" class="img-thumbnail dim-pic" alt="Responsive image"
+            data-target="#carouselExampleIndicators" data-slide-to="2">
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/d12.jpg" class="img-thumbnail dim-pic" alt="Responsive image"
+            data-target="#carouselExampleIndicators" data-slide-to="3">
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/d14.jpg" class="img-thumbnail dim-pic" alt="Responsive image"
+            data-target="#carouselExampleIndicators" data-slide-to="4">
+          </div>
+          <div class="col-2">
+            <img src="./assets/images/d15.jpg" class="img-thumbnail dim-pic" alt="Responsive image"
+            data-target="#carouselExampleIndicators" data-slide-to="5">
+          </div>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-pause="hover" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="0" src="./assets/images/d2.jpg" class="img-fluid" alt="Responsive image" data-toggle="popover" data-trigger="hover" title="Dismissible popover" data-content="Click to learn more!">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d2.jpg" class="img-fluid back" alt="Slide One" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="1" src="./assets/images/d4.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d4.jpg" class="img-fluid back" alt="Slide Two" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="2" src="./assets/images/d6.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d6.jpg" class="img-fluid back" alt="Slide Three">
+                </div>
+              </div>          
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="3" src="./assets/images/d12.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d12.jpg" class="img-fluid back" alt="Slide Four">
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="4" src="./assets/images/d14.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d14.jpg" class="img-fluid back" alt="Slide Five">
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img id="5" src="./assets/images/d15.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/d15.jpg" class="img-fluid back" alt="Slide Six">
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+      <!-- <div class="row">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 pic-column" >
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <img src="./assets/images/d2.jpg" class="img-fluid" alt="Responsive image" data-toggle="popover" data-trigger="hover" title="Dismissible popover" data-content="Click to learn more!">
               </div>
               <div class="flip-card-back">
-                <img src="./assets/images/d2.jpg" class="img-fluid back" alt="Responsive image" >
-
-                <!-- <h1>The Movie Game!</h1> -->
+                <img src="./assets/images/d2.jpg" class="img-fluid " alt="Responsive image" >
               </div>
             </div>
           </div>
         </div>
-        <div class="col-3 pic-column">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3  pic-column ">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -61,7 +172,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 pic-column">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3  pic-column">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -75,7 +186,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-3 pic-column">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3  pic-column">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -87,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 pic-column">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3  pic-column">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -99,7 +210,7 @@
             </div>
           </div>
         </div>
-        <div class="col-3 pic-column">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3  pic-column">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -111,12 +222,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<scrip src="https://unpkg.com/@popperjs/core@2"></scrip>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
